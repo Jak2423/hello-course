@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #efe7dd;
+  color: #1b202b;
+  display: block;
+}
+
+@layer components {
+  .course-box {
+    @apply p-2.5 mt-5 mx-10 border border-gray-500 rounded-xl shadow-listShadow hover:cursor-pointer hover:shadow-xl;
+  }
+  .course-index {
+    @apply text-dog-blue;
+  }
+  .search-box {
+    @apply m-5;
+  }
+
+  .search-bar {
+    @apply bg-dog-white border border-gray-300 text-lg rounded-xl pl-5 p-1.5 block w-full max-w-lg m-auto
+    focus:outline-none focus:border-4 duration-150 ease-in;
+  }
+  .footer {
+    @apply text-center text-sm opacity-50 my-5;
+  }
+}
