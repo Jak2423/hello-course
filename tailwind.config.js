@@ -13,14 +13,8 @@ module.exports = {
       boxShadow: {
         listShadow: '1px 3px 5px rgba(0,0,0,0.1)',
       },
-      gridTemplateRows: {
-        layout: 'auto auto 1fr',
-      },
       textColor: {
         'dog-blue': '#4c79e5',
-      },
-      gridTemplateRows: {
-        sticky: 'auto 1fr auto',
       },
     },
   },

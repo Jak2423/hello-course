@@ -28,7 +28,11 @@ const CourseDetails = () => {
             <h3 className='underline underline-offset-4 decoration-4  decoration-neutral-600 text-lg mb-4 font-bold leading-5'>
               Зорилго
             </h3>
-            <p className='text-justify indent-4'>{course.Зорилго}...</p>
+            <p className='text-justify indent-4'>{course.Зорилго}</p>
+            <h3 className='underline underline-offset-4 decoration-4  decoration-neutral-600 text-lg mb-4 font-bold leading-5 pt-2'>
+              Товч Агуулга
+            </h3>
+            <p className='text-justify indent-4'>{course.Товч_агуулга}</p>
           </div>
         </article>
       )}

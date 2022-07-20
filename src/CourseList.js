@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const CourseList = ({ courses, query }) => {
   return (
-    <div className='mt-10'>
+    <div className='flex flex-col items-center'>
       {courses
         .filter((course) =>
           course.Монгол_нэр.toLowerCase().includes(query.toLowerCase()),

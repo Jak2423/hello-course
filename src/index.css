@@ -3,35 +3,23 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #efe7dd;
-  color: #1b202b;
-  display: block;
+@layer base {
+  * {
+    @apply m-0 p-0 box-border scroll-smooth;
+  }
+  body {
+    @apply bg-[#efe7dd] text-[#1b202b];
+  }
 }
 
 @layer components {
   .course-box {
-    @apply p-2.5 mt-5 mx-10 border border-gray-500 rounded-xl shadow-listShadow hover:cursor-pointer hover:shadow-xl;
+    @apply bg-[#f5f0e9] w-1/2 p-2.5 m-2  rounded-xl shadow-listShadow hover:cursor-pointer hover:shadow-xl;
   }
   .course-index {
     @apply text-dog-blue;
   }
-  .search-box {
-    @apply m-5;
-  }
-
-  .search-bar {
-    @apply bg-dog-white border border-gray-300 text-lg rounded-xl pl-5 p-1.5 block w-full max-w-lg m-auto
-    focus:outline-none focus:border-4 duration-150 ease-in;
-  }
   .footer {
-    @apply text-center text-sm opacity-50 my-5;
+    @apply text-center text-sm opacity-50 py-5;
   }
 }

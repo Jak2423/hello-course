@@ -8,15 +8,17 @@ import Footer from './Footer';
 function App() {
   return (
     <Router>
-      <div className='App'>
-        <div className='mt-16 mx-10 font-Roboto-Mono'>
+      <div className='flex flex-col h-screen overflow-y-scroll font-Roboto-Mono'>
+        <main className='pt-16 px-10 flex-grow'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/courses/:id' element={<CourseDetails />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
+        </main>
+        <div className='bottom-0'>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </Router>
   );

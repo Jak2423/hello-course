@@ -14,13 +14,13 @@ const Home = () => {
   return (
     <div className='home'>
       <h2 className='text-3xl font-extrabold text-center leading-none'>
-        Hello World
+        Hello Course
       </h2>
-      <div className='search-box'>
+      <div className='flex items-center justify-center mt-10'>
         <input
           type='text'
           placeholder='Хичээлийн нэрээр хайх...'
-          className='search-bar'
+          className='bg-dog-white border border-gray-300 text-lg rounded-xl w-full max-w-lg m-auto focus:outline-none h-[44px] p-5'
           onChange={(e) => setQuery(e.target.value)}
         />
       </div>
